@@ -6,13 +6,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'mvn clean'
+                sh '/usr/local/bin/mvn clean'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh '/usr/local/bin/mvn test'
             }
         }
     }
