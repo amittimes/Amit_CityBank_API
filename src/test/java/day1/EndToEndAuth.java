@@ -11,6 +11,7 @@ public class EndToEndAuth {
     @Test
     void authFlow() {
     	System.out.println("CI/CD implementd");
+    	System.out.println("CI/CD implementd new");
         // Login Request Body
         String loginBody = "{\n" +
                 "  \"username\": \"mor_2314\",\n" +
