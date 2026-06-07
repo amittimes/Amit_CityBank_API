@@ -11,8 +11,12 @@ import io.restassured.response.ResponseBodyExtractionOptions;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import java.util.HashMap;
+
 public class HttpRequest {
 
+	
+	
     @Test
     void createProduct() {
 
@@ -47,5 +51,10 @@ public class HttpRequest {
 		JsonPath jsonPath = response.jsonPath();
         String title = jsonPath.getString("title");
         System.out.println(title);
+        System.out.println("Hello jenkin");
     }
+    
+
+   
+   
 }
